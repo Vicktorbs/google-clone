@@ -27,7 +27,7 @@ header nav .nav-right-section {
 }
 nav .nav-right-section a {
     margin-right: 10px;
-    color: #000;
+    color: #362121;
 }
 nav .nav-right-section .menu-item {
     background-image: url('https://static.thenounproject.com/png/756729-200.png');
@@ -43,7 +43,7 @@ nav .nav-right-section img {
 }
 /* Display normal  */
 main {
-    margin-top: 150px;
+    margin-top: 2rem;
     text-align: center;
 }
 main .main-logo {
@@ -59,6 +59,7 @@ main .main-input {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 35px;
+    margin-top: 20px;
 }
 main .main-input-container {
     width: 525px;
@@ -67,6 +68,7 @@ main .main-input-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: all .5s timing-function delay iteration-count direction fill-mode;
 }
 main .main-input input {
     width: 450px;
@@ -114,21 +116,27 @@ main .main-buttons button {
 }
 main .main-buttons button:hover {
     border: 1px solid #c6c6c6;
-    box-shadow: 0 1px #000001;
+    /* box-shadow: 0 1px #000001; */
     color: #222;
 }
 /* Display grid */
 footer {
     width: 100%;
-    height: 50px;
+    height: 100px;
     position: absolute;
     bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     font-size: 13px;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
+}
+footer .country {
+    margin: 15px 30px;
+    color: #5f6368;
+}
+footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 footer ul {
     margin: 18px;
@@ -137,6 +145,7 @@ footer ul {
     padding-left: 0;
 }
 footer .footer-left {
+    margin-left: 30px;
     justify-self: left;
 }
 footer .footer-right {
