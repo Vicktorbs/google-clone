@@ -65,6 +65,7 @@ main .main-input-container {
     width: 525px;
     border-radius: 100px;
     border: 1px solid #dfe1e5;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,4 +155,37 @@ footer .footer-right {
 footer ul li a {
     margin: 10px;
     color: #5f6368;
+}
+
+@media screen and (max-width: 768px) {
+    header nav .nav-right-section {
+        width: auto;
+    }
+    header nav .nav-right-section li:nth-child(2),
+    header nav .nav-right-section li:nth-child(1) {
+        display: none;
+    }
+    main .main-logo img {
+        width: 200px;
+    }
+    main .main-input {
+        width: 90%;
+    }
+    main .main-input-container {
+        width: 95%;
+        /* padding: 0 10px; */
+    }
+    main .main-buttons div {
+        display: none;
+    }
+    main .main-input input
+    footer {
+        display: none;
+    }
+    main .main-input .search-icon {
+        margin-left: 10px;
+    }
+    main .main-input .micro-icon {
+        margin-right: 10px;
+    }
 }
