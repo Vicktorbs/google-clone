@@ -18,3 +18,46 @@ body.party footer {
 body.party main .main-input {
     top: 0;
 }
+img#fernanda-img {
+    transform: rotate(12deg);
+    width: 65%;
+    position: absolute;
+    top: 150px;
+    border: 15px #fff solid;
+    border-bottom: 45px #fff solid;
+}
+.hoe {
+    position: absolute;
+    width: 30%;
+    font-size: 2rem;
+    text-align: left;
+    left: 12px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+.happy {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    width: 75%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    img#fernanda-img {
+        width: 15%;
+        right: 20%;
+    }
+    .hoe {
+        left: 20%;
+        top: 29%;
+        font-size: 3rem;
+    }
+    .hoe p{
+        margin: 1rem 0;
+    }
+    .happy {
+        bottom: 4rem;
+    }
+}
