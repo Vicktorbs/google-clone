@@ -6,58 +6,101 @@
     box-shadow: 3px 3px 10px rgb(255, 0, 0);
 }
 body.party {
-    height: 100vh;
+    height: 175vh;
     background-image: linear-gradient(#5BB9E9 10%, #C2D2DF 100%);
     background-repeat: no-repeat;
 }
 body.party main .main-logo,
-body.party main .main-buttons,
-body.party footer {
+body.party main .main-buttons {
     display: none;
 }
 body.party main .main-input {
     top: 0;
 }
+.images {
+    border: 6px #fff solid;
+    border-bottom: 45px #fff solid;
+}
 img#fernanda-img {
     transform: rotate(12deg);
     width: 65%;
     position: absolute;
-    top: 150px;
-    border: 15px #fff solid;
-    border-bottom: 45px #fff solid;
+    top: 250px;
+}
+img#fernanda-doit {
+    transform: rotate(-10deg);
+    width: 70%;
+    position: absolute;
+    top: 170px;
+    left: 0;
+}
+img#fernanda-collage {
+    transform: rotate(5deg);
+    width: 70%;
+    position: absolute;
+    top: 500px;
+    left: 1rem;
 }
 .hoe {
     position: absolute;
-    width: 30%;
-    font-size: 2rem;
-    text-align: left;
-    left: 12px;
-    color: #fff;
+    width: 90%;
+    font-size: 2.3rem;
+    text-align: center;
+    left: 1.5rem;
+    bottom: -49%;
     font-family: 'Dancing Script', cursive;
+}
+.hoe p.text-hoe.active:nth-child(2)::after {
+    content: 'eaven';
+}
+.hoe p.text-hoe.active:nth-child(3)::after {
+    content: 'n';
+}
+.hoe p.text-hoe.active:nth-child(4)::after {
+    content: 'arth';
+}
+#img-hoe {
+    width: 20%;
 }
 .happy {
     position: absolute;
-    bottom: 40px;
-    left: 10px;
+    bottom: -70%;
+    left: 2rem;
     width: 75%;
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
 }
 
 @media screen and (min-width: 768px) {
+    body.party {
+        height: 250vh;
+    }
     img#fernanda-img {
+        top: 180px;
         width: 15%;
-        right: 20%;
+        right: 15%;
+    }
+    img#fernanda-doit {
+        width: 27%;
+        top: 170px;
+        left: 11rem;
+    }
+    img#fernanda-collage {
+        width: 30%;
+        top: 350px;
+        left: 40%;
     }
     .hoe {
         left: 20%;
-        top: 29%;
+        top: 140%;
+        width: 60%;
         font-size: 3rem;
     }
     .hoe p{
         margin: 1rem 0;
     }
     .happy {
-        bottom: 4rem;
+        width: 100%;
+        top: 225%;
     }
 }

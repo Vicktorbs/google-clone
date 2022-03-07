@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
@@ -161,6 +162,9 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
+    footer {
+        display: none;
+    }
     header nav .nav-right-section {
         width: auto;
     }
@@ -179,10 +183,6 @@ footer ul li a {
         /* padding: 0 10px; */
     }
     main .main-buttons div {
-        display: none;
-    }
-    main .main-input input
-    footer {
         display: none;
     }
     main .main-input .search-icon {
