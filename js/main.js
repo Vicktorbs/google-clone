@@ -4,16 +4,24 @@ const party = document.getElementById('party-section')
 const footer = document.getElementById('footer')
 const message = document.getElementsByClassName('text-hoe')
 const imgHoe = document.getElementById('img-hoe')
+const loader = document.getElementById('loader')
+loader.style.display = 'none'
 
 function getIputValue(e) {
     e.preventDefault();
-    console.log(message);
+    // console.log(message);
     let searchValue = document.getElementById('search')
-    if (searchValue.value === 'fer') {
-        console.log('Happy Birthday');
-        party.style.display = 'block'
-        body.classList.add('party')
-        footer.style.display = 'none'
+    if (searchValue.value.toLowerCase() === 'fer' || 'fernanda' || 'maria fernanda' || 'maria fernanda audiffred jimenez') {
+        // console.log('Happy Birthday');
+        loader.style.display = 'block'
+        searchValue.value = '❤️ ' + searchValue.value + ' ❤️'
+        setTimeout(() => {
+            console.log('loading');
+            party.style.display = 'block'
+            body.classList.add('party')
+            footer.style.display = 'none'
+            loader.style.display = 'none'
+        }, 1500)
     } else {
         form.classList.add('bad-input')
         searchValue.value = ''
