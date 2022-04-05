@@ -22,24 +22,46 @@ body.party main .main-input {
     border-bottom: 45px #fff solid;
 }
 img#fernanda-img {
-    transform: rotate(12deg);
-    width: 65%;
+    transform: rotate(-5deg);
+    width: 45%;
     position: absolute;
-    top: 250px;
+    left: 5%;
+    top: 507px;
 }
 img#fernanda-doit {
     transform: rotate(-10deg);
-    width: 70%;
+    width: 35%;
     position: absolute;
     top: 170px;
-    left: 0;
+    left: 5%;
+}
+img#fernanda-2015 {
+    transform: rotate(12deg);
+    width: 35%;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+}
+img#fernanda-collage1 {
+    transform: rotate(3deg);
+    width: 45%;
+    position: absolute;
+    top: 350px;
+    left: 1rem;
+}
+img#hands {
+    transform: rotate(-9deg);
+    width: 41%;
+    position: absolute;
+    top: 441px;
+    right: 1.5rem;
 }
 img#fernanda-collage {
-    transform: rotate(5deg);
-    width: 70%;
+    width: 40%;
     position: absolute;
-    top: 500px;
-    left: 1rem;
+    top: 626px;
+    right: 2rem;
+    transform: rotate(9deg);
 }
 .hoe {
     position: absolute;
@@ -60,6 +82,7 @@ img#fernanda-collage {
     content: 'arth';
 }
 #img-hoe {
+    cursor: pointer;
     width: 20%;
 }
 .happy {
@@ -76,19 +99,34 @@ img#fernanda-collage {
         height: 250vh;
     }
     img#fernanda-img {
-        top: 180px;
-        width: 15%;
-        right: 15%;
+        top: 172px;
+        width: 21%;
+        left: 41%;
     }
     img#fernanda-doit {
-        width: 27%;
+        width: 22%;
         top: 170px;
         left: 11rem;
     }
+    img#fernanda-2015 {
+        width: 17%;
+        top: 163px;
+        left: 65%;
+    }
+    img#fernanda-collage1 {
+        width: 22%;
+        top: 404px;
+        left: 3rem;
+    }
+    img#hands {
+        width: 20%;
+        top: 558px;
+        right: 45rem;
+    }
     img#fernanda-collage {
-        width: 30%;
-        top: 350px;
-        left: 40%;
+        width: 20%;
+        top: 410px;
+        right: 10%;
     }
     .hoe {
         left: 20%;

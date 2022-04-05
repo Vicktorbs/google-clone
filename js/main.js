@@ -14,7 +14,7 @@ function getIputValue(e) {
     if (searchValue.value.toLowerCase() === 'fer' || 'fernanda' || 'maria fernanda' || 'maria fernanda audiffred jimenez') {
         // console.log('Happy Birthday');
         loader.style.display = 'block'
-        searchValue.value = '❤️ ' + searchValue.value + ' ❤️'
+        searchValue.value = '❤️🎉 ' + searchValue.value + ' 🎈❤️'
         setTimeout(() => {
             console.log('loading');
             party.style.display = 'block'
