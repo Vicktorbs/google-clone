@@ -11,7 +11,7 @@ function getIputValue(e) {
     e.preventDefault();
     // console.log(message);
     let searchValue = document.getElementById('search')
-    if (searchValue.value.toLowerCase() === 'fer' || 'fernanda' || 'maria fernanda' || 'maria fernanda audiffred jimenez') {
+    if (searchValue.value.toLowerCase().includes('fer' || 'fernanda' || 'maria fernanda' || 'maria fernanda audiffred jimenez')) {
         // console.log('Happy Birthday');
         loader.style.display = 'block'
         searchValue.value = '❤️🎉 ' + searchValue.value + ' 🎈❤️'

@@ -6,7 +6,7 @@
     box-shadow: 3px 3px 10px rgb(255, 0, 0);
 }
 body.party {
-    height: 175vh;
+    height: 225vh;
     background-image: linear-gradient(#5BB9E9 10%, #C2D2DF 100%);
     background-repeat: no-repeat;
 }
@@ -65,11 +65,12 @@ img#fernanda-collage {
 }
 .hoe {
     position: absolute;
+    display: block;
     width: 90%;
     font-size: 2.3rem;
     text-align: center;
     left: 1.5rem;
-    bottom: -49%;
+    top: 120%;
     font-family: 'Dancing Script', cursive;
 }
 .hoe p.text-hoe.active:nth-child(2)::after {
@@ -87,11 +88,15 @@ img#fernanda-collage {
 }
 .happy {
     position: absolute;
-    bottom: -70%;
+    top: 180%;
     left: 2rem;
     width: 75%;
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
+}
+#party-section .images-section {
+    height: 120vh;
+    /* background: rebeccapurple; */
 }
 
 @media screen and (min-width: 768px) {
